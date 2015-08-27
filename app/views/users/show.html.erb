@@ -1,0 +1,11 @@
+<div class="jumbotron">
+    <h1>Hello <%=@user.name%></h1>
+</div>
+
+<h2>Your List of thing to do:</h2>
+
+<%= render partial: 'items/form', locals: {user: current_user, item: Item.new} %>
+
+<% if !@user.items.empty? %>
+    <%= render @user.items %>
+<% end %>
