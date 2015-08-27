@@ -1,10 +1,9 @@
-
-    <div class="row">
-   
-        <%= content_tag :li, id: "item-#{item.id}" do %>
-          <%= link_to "",[current_user,item] , method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
-          <small> Days left to complete</small>
-          <%= item.days_left %>
-          <%= item.name %>
-        <% end %>  
-    </div>
+<div class="row">
+ 
+  
+<%= content_tag :li, id: "item-#{item.id}" do %>
+        <%= link_to "",[current_user,item] , method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+        <small> Days left to complete</small><%= item.days_left %> 
+        <%= item.name %>
+<% end %>  
+</div>

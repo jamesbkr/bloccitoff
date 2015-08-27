@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron text-center">
     <h1>Hello <%=@user.name%></h1>
 </div>
 
@@ -7,5 +7,5 @@
 <%= render partial: 'items/form', locals: {user: current_user, item: Item.new} %>
 
 <% if !@user.items.empty? %>
-    <%= render @user.items %>
+          <%= render @user.items %>
 <% end %>
