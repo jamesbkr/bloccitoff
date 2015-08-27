@@ -17,9 +17,16 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 .field {
-    
-    color: blue;
+    text-align: center;
+    color: white;
     size: 12px;
+  
+}
+.btn {
+    text-transform: uppercase;
+    background: green;
+    color: white;
+    margin: 20px;
 }
 .timeleft {
     color: red;
